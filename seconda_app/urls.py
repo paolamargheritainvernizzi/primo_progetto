@@ -1,10 +1,11 @@
 from django.urls import path
-from seconda_app.views import es_if
+from seconda_app.views import index,es_if,if_else_elif
 
 
 
 app_name="seconda_app"
-urlpatterns = [
+urlpatterns =[
+    path('index', index, name="index"),
     path('es_if', es_if, name="es_if"),
-    
+    path('if_else_elif', if_else_elif, name="if_else_elif"),    
 ]

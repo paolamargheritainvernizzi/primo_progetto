@@ -5,14 +5,15 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Index</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+
     
 </head>
 <body>
-    <ol>
-        <li><a href="/admin">Pannello admin</a></li>
-        <li><a href="{% url 'prima_app:index'%}">Index prima app</a></li>
-        <li><a href="{% url 'seconda_app:es_if'%}">Index secondo app(no)<!DOCTYPE html>
+    <ol><li><a href="{% url 'index'%}">Home index root</a></li>
+        <li><a href="{% url 'seconda_app:es_if'%}">if else</a></li>
+        <li><a href="{% url 'seconda_app:if_else_elif'%}">if else elif</a></li>
+        
+        
     </ol>
 </body>
 </html>
