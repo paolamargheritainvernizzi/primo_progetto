@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Homepage</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+
+<!-- Cicla una sequenza usando forloop.counter (contatore che parte da 1) -->
+Cicla una sequenza usando <b>forloop.counter</b><br/>
+{% for x in List2 %}
+    <i>{{ forloop.counter }}</i> – {{ x }}
+{% endfor %}
+<br/><br/>
+
+<!-- Cicla una sequenza usando forloop.counter0 (contatore che parte da 0) -->
+Cicla una sequenza usando <b>forloop.counter0</b><br/>
+{% for x in List2 %}
+    <i>{{ forloop.counter0 }}</i> – {{ x }}
+{% endfor %}
+<br/><br/>
+
+<!-- Stampa il primo elemento della sequenza usando forloop.first -->
+Stampa il primo elemento della sequenza usando <b>forloop.first</b>:<br/>
+{% for x in List2 %}
+    {% if forloop.first %}
+        <i>Il primo elemento</i> – {{ x }}
+    {% endif %}
+{% endfor %}
+<br/><br/>
+
+<!-- Stampa l’ultimo elemento della lista usando forloop.last -->
+Stampa l'ultimo elemento della lista usando <b>forloop.last</b>:<br/>
+{% for x in List2 %}
+    {% if forloop.last %}
+        <i>L'ultimo elemento</i> – {{ x }}
+    {% endif %}
+{% endfor %}
+<br/><br/>
+
+<!-- Mostra il numero degli elementi non ancora ciclati usando forloop.revcounter -->
+Stampa il numero degli elementi non ancora ciclati usando <b>forloop.revcounter</b>:<br/>
+{% for x in List2 %}
+    <i>Numero degli elementi ancora da ciclare</i> = {{ forloop.revcounter }}<br/>
+    <i>Elemento</i> – {{ x }}
+{% endfor %}
+<br/><br/>
+
+<!-- Mostra il numero degli elementi non ancora ciclati usando forloop.revcounter0 -->
+Stampa il numero degli elementi non ancora ciclati usando <b>forloop.revcounter0</b>:<br/>
+{% for x in List2 %}
+    <i>Numero degli elementi ancora da ciclare</i> = {{ forloop.revcounter0 }}<br/>
+    <i>Elemento</i> – {{ x }}
+{% endfor %}
+<br/><br/>
+
+<!-- Stampa la sequenza al contrario usando l’attributo “reversed” nel tag for -->
+Stampa la sequenza al contrario usando <b>reversed</b>,
+</body>
+</html>
