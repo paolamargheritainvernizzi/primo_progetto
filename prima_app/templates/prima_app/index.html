@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Index</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+{% extends "base.html" %}
 
-    
-</head>
-<body>
-    <ol><li><a href="{% url 'index'%}">Home index root</a></li>
-        <li><a href="{% url 'prima_app:homepage'%}">Home pagina di benvenuto</a></li>
-        <li><a href="{% url 'prima_app:welcome'%}">Welcome</a></li>
-        <li><a href="{% url 'prima_app:lista'%}">Lista</a></li>
-        <li><a href="{% url 'prima_app:chisiamo'%}">Chi siamo</a></li>
-        <li><a href="{% url 'prima_app:variabili'%}">Variabili</a></li>
-        
-    </ol>
-</body>
-</html>
+{% block title %} {{ block.super }} | Chi siamo {% endblock title %}
+
+{% block content %}
+  
+{% endblock content %}

@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Index</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+{% extends "base.html" %}
 
-    
-</head>
-<body>
-    <ol><li><a href="{% url 'index'%}">Home index root</a></li>
-        <li><a href="{% url 'seconda_app:es_if'%}">if else</a></li>
-        <li><a href="{% url 'seconda_app:if_else_elif'%}">if else elif</a></li>
-         <li><a href="{% url 'seconda_app:es_for'%}">es for</a></li>
-        
-    </ol>
-</body>
-</html>
+{% block title %} {{ block.super }} | Chi siamo {% endblock title %}
+
+{% block content %}
+  
+{% endblock content %}

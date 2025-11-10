@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Lista</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
-</head>
-<body>
-    <ol>
+
+{% extends "base.html" %}
+
+{% block title %} {{ block.super }} | Chi siamo {% endblock title %}
+
+{% block content %}
+  <ol>
         <li>Primo</li>
         <li>Secondo</li>
         <li>Terzo</li>
     </ol>
-</body>
-</html>
+{% endblock content %}

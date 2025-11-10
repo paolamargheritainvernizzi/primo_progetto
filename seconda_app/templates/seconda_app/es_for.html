@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Homepage</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
-</head>
-<body>
+{% extends "base.html" %}
 
-<!-- Cicla una sequenza usando forloop.counter (contatore che parte da 1) -->
+{% block title %} {{ block.super }} | Chi siamo {% endblock title %}
+
+{% block content %}
+  <!-- Cicla una sequenza usando forloop.counter (contatore che parte da 1) -->
 Cicla una sequenza usando <b>forloop.counter</b><br/>
 {% for x in List2 %}
     <i>{{ forloop.counter }}</i> – {{ x }}
@@ -59,5 +53,7 @@ Stampa il numero degli elementi non ancora ciclati usando <b>forloop.revcounter0
 
 <!-- Stampa la sequenza al contrario usando l’attributo “reversed” nel tag for -->
 Stampa la sequenza al contrario usando <b>reversed</b>,
-</body>
-</html>
+{% endblock content %}
+
+
+
